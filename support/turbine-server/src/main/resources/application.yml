@@ -1,0 +1,37 @@
+# For Spring Actuator /info endpoint
+info:
+    artifact: turbine
+    name: turbine
+    description: Turbine
+    version: 1.0.0
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false   
+
+# Server HTTP port
+server:
+  port: 8989
+
+management:
+  port: 8990  
+
+# LOGGING
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+    
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
+
+
+        

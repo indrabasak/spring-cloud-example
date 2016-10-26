@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/services/author-model/author-model.iml" filepath="$PROJECT_DIR$/services/author-model/author-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/author-service/author-service.iml" filepath="$PROJECT_DIR$/services/author-service/author-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/book-composite-service/book-composite-service.iml" filepath="$PROJECT_DIR$/services/book-composite-service/book-composite-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/book-model/book-model.iml" filepath="$PROJECT_DIR$/services/book-model/book-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/book-service/book-service.iml" filepath="$PROJECT_DIR$/services/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/support/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/support/gateway-server/gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/support/hystrix-dashboard/hystrix-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/review-model/review-model.iml" filepath="$PROJECT_DIR$/services/review-model/review-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/review-service/review-service.iml" filepath="$PROJECT_DIR$/services/review-service/review-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-example.iml" filepath="$PROJECT_DIR$/spring-cloud-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/support.iml" filepath="$PROJECT_DIR$/support/support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/support/turbine-server/turbine-server.iml" />
+    </modules>
+  </component>
+</project>

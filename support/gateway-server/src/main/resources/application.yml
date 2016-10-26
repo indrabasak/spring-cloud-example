@@ -1,0 +1,43 @@
+# For Spring Actuator /info endpoint
+info:
+    artifact: gateway
+    name: gateway
+    description: Gateway Server
+    version: 1.0.0
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+# Zuul specific configuration
+zuul:
+  ignoredServices: "*" # skip services matching the pattern
+  routes:
+    # explicitly configured route
+    bookcomposite: /api/**
+#      path: /books/**  #http://192.168.1.6:8765/books/books/1
+
+# Server HTTP port
+server:
+  port: 8765
+
+# LOGGING
+logging:
+  level: # Log levels severity mapping
+    ROOT: INFO
+    org.springframework.web: INFO
+    
+# Increase the Hystrix timeout to 60s (globally)
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000    
+
+        

@@ -1,0 +1,18 @@
+# use a random unassigned HTTP port by scanning for free port
+server:
+  port: 0
+  
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}  
+  client:
+    registryFetchIntervalSeconds: 5
+
+# For Spring Actuator /info endpoint
+info:
+    artifact: review
+    name: review
+    description: Review Service
+    version: 1.0.0

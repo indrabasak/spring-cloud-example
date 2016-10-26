@@ -1,0 +1,22 @@
+server:
+  port: 8761
+
+# settings registerWithEureka and fetchRegistry are set to false
+# meaning that this Server is not part of a cluster
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+info:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+
+
+        

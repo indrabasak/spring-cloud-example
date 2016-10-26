@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.basaki.example</groupId>
+        <artifactId>spring-cloud-example</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>services</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Spring Cloud Example Services Parent Project</name>
+    <modules>
+        <module>author-model</module>
+        <module>book-model</module>
+        <module>review-model</module>
+        <module>author-service</module>
+        <module>book-service</module>
+        <module>review-service</module>
+        <module>book-composite-service</module>
+    </modules>
+</project>
