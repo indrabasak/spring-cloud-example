@@ -6,7 +6,9 @@
 *.iml
 
 ## Directory-based project format:
-.idea/
+.idea
+.idea/*.xml
+
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
@@ -119,8 +121,17 @@ hs_err_pid*
 
 ## Eclipse
 .project
+.classpath
 
 ## Directory-based project format:
 .settings/
 # if you remove the above rule, at least ignore the following:
 
+### Maven template
+target
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
