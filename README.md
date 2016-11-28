@@ -5,6 +5,7 @@ It is based on [Spring Cloud Camden](https://spring.io/blog/2016/09/26/spring-cl
 
 # Modules
 The project consist of multiple modules and can be classified into following categories:
+
 1. **Services**
     1. Book Service: Provides information about book title and author name.
         1. `book-model`
