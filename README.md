@@ -1,3 +1,5 @@
+[![Build Status][travis-badge]][travis-badge-url]
+
 Spring Cloud Example
 ==========================
 This is a  [**Spring Cloud**](http://projects.spring.io/spring-cloud/) based microservices example.
@@ -37,3 +39,5 @@ Execute the following command from the parent directory:
 mvn clean install
 ```
 
+[travis-badge]: https://travis-ci.org/indrabasak/spring-cloud-example.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/indrabasak/spring-cloud-example/
