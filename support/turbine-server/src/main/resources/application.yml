@@ -26,12 +26,19 @@ logging:
     root: INFO
     com.netflix.discovery: 'OFF'
     
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#  client:
+#    serviceUrl:
+#      defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
+      defaultZone: http://eurekaserver:eurekaserver@pdxdv-disconfig01.vm.iovationnp.com:8761/eureka/,http://eurekaserver:eurekaserver@pdxdv-disconfig02.vm.iovationnp.com:8761/eureka/
 
 
         

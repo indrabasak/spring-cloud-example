@@ -3,7 +3,8 @@
 Spring Cloud Example
 ==========================
 This is a  [**Spring Cloud**](http://projects.spring.io/spring-cloud/) based microservices example.
-It is based on [Spring Cloud Camden](https://spring.io/blog/2016/09/26/spring-cloud-camden-release-and-brixton-sr6-are-available) release. 
+It is based on [Spring Cloud Camden](https://spring.io/blog/2016/09/26/spring-cloud-camden-release-and-brixton-sr6-are-available) release
+and Spring Boot version 1.4.1.RELEASE. 
 
 # Modules
 The project consist of multiple modules and can be classified into following categories:

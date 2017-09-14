@@ -9,14 +9,31 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 info:
     artifact: ${project.artifactId}
-    name: ${project.name}
+    name: ${spring.application.name}
     description: ${project.description}
     version: ${project.version}
 
+security:
+  auth:
+    users:
+      userA:
+        password: pwdA
+      userB:
+        password: pwdB
+      userC:
+        password: pwdC
+      userD:
+        password: pwdD
+      userE:
+        password: pwdE
 
-        
+#spring:
+#  main:
+#    banner-mode: "off"

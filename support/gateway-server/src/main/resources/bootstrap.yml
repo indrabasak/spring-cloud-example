@@ -4,3 +4,10 @@ spring:
   cloud:
     config: #Cloud Foundry configuration for a user-provided controller on Cloud Foundry named "configserver"
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://userA:pwdA@localhost:8761/eureka/

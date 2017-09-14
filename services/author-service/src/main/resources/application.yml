@@ -1,14 +1,18 @@
 # use a random unassigned HTTP port by scanning for free port
 server:
-  port: 0
+  port: 8766
   
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}  
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
   client:
     registryFetchIntervalSeconds: 5
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://userB:pwdB@localhost:8761/eureka/
 
 # For Spring Actuator /info endpoint
 info:
@@ -16,3 +20,5 @@ info:
     name: author
     description: Author Service
     version: 1.0.0
+
+#eureka.instance.initial-status=OUT_OF_SERVICE

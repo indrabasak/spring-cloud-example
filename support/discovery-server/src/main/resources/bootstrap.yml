@@ -3,4 +3,6 @@ spring:
     name: eureka
   cloud:
     config:   #Cloud Foundry configuration for a user-provided controller on Cloud Foundry named "configserver"
-      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}  
+#      uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}
+      discovery:
+        enabled: true
