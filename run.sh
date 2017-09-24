@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-mvn clean install
+#mvn clean install
 
-call mvn -pl support/discovery-server -am spring-boot:run
-call mvn -pl support/gateway-server -am spring-boot:run
+java -jar support/discovery-server/target/discovery-server-1.0.jar &
+
+#mvn  support/discovery-server -am spring-boot:run
+#mvn  support/gateway-server -am spring-boot:run
 
 #cd support/discovery-server
 #mvn support/discovery-server/spring-boot:run &

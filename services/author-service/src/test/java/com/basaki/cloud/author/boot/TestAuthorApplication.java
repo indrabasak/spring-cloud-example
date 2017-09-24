@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * {@code TestAuthorApplication} represents the entry point for author controller
+ * {@code TestAuthorApplication} represents the entry point for author
+ * controller
  * test spring boot application.
  * <p/>
  *
@@ -17,6 +18,8 @@ import org.springframework.context.annotation.ComponentScan;
         "com.basaki.cloud.author.controller",
         "com.basaki.cloud.author.error",
         "com.basaki.cloud.author.helper"})
+//        ,excludeFilters = @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,
+//                value = SecurityConfiguration.class))
 public class TestAuthorApplication {
     public static void main(String[] args) {
         SpringApplication.run(TestAuthorApplication.class, args);

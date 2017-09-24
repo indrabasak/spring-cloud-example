@@ -22,3 +22,11 @@ info:
     version: 1.0.0
 
 #eureka.instance.initial-status=OUT_OF_SERVICE
+
+security:
+  auth:
+    users:
+      userA:
+        password: pwdA
+      userB:
+        password: pwdB

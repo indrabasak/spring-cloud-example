@@ -47,8 +47,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>
                     <skip>false</skip>
+                    <fork>true</fork>
+                    <mainClass>
+                        com.basaki.cloud.support.discovery.EurekaApplication
+                    </mainClass>
                 </configuration>
                 <executions>
                     <execution>

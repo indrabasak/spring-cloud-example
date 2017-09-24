@@ -20,6 +20,10 @@ zuul:
     # explicitly configured route
     bookcomposite: /api/**
 #      path: /books/**  #http://192.168.1.6:8765/books/books/1
+    author:
+      path: /authors/**
+      stripPrefix: false
+      url: http://localhost:8766
 
 # Server HTTP port
 server:
